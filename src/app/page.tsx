@@ -63,7 +63,7 @@ export default function Home() {
           <div className="inline-flex items-center gap-3 px-4 py-2 bg-neutral-950 rounded-lg border border-neutral-800 font-mono text-sm text-emerald-400">
             <span>POST</span>
             <span className="text-neutral-500">/</span>
-            <span>/api/upload?filename=my-pack.zip</span>
+            <span>/api/upload?serverId=UUID&filename=my-pack.zip</span>
           </div>
         </div>
 

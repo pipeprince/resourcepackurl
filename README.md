@@ -24,7 +24,7 @@ When a user installs a Resource Pack via the Pterodactyl Panel, the server can a
 Inside your Pterodactyl Panel `DatapackController.php`, you can send the resource pack to this API:
 
 ```php
-$cdnUrl = 'https://YOUR_VERCEL_APP_URL.vercel.app/api/upload?filename=VanillaTweaks_ResourcePack.zip';
+$cdnUrl = 'https://YOUR_VERCEL_APP_URL.vercel.app/api/upload?serverId=' . $server->uuid . '&filename=VanillaTweaks_ResourcePack.zip';
 
 $response = Http::withBody(
     file_get_contents($fullPath),
