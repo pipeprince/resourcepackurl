@@ -2,7 +2,7 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyour-username%2Fresourcepackurl&stores=%5B%7B"type"%3A"blob"%7D%5D)
 
-A serverless API and landing page designed to act as a **Resource Pack Hosting CDN** for Minecraft servers. It integrates perfectly with the VanillaTweaks Datapack Installer on Pterodactyl Panel.
+A serverless API and landing page designed to act as a **Resource Pack Hosting CDN** for Minecraft servers. It integrates perfectly with the VanillaTweaks Installer on Pterodactyl Panel.
 
 When a user installs a Resource Pack via the Pterodactyl Panel, the server can automatically upload the generated `.zip` file to this CDN, which generates a direct download link and calculates the SHA-1 hash needed for `server.properties`.
 

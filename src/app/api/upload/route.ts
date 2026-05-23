@@ -51,7 +51,11 @@ export async function POST(request: Request): Promise<NextResponse> {
   } catch (error) {
     console.error('Upload error:', error);
     return NextResponse.json(
-      { error: 'An error occurred during file upload.' },
+      { 
+        error: 'An error occurred during file upload.', 
+        details: error instanceof Error ? error.message : String(error),
+        stack: error instanceof Error ? error.stack : undefined 
+      },
       { status: 500 }
     );
   }
